@@ -1,23 +1,11 @@
 #include <stdio.h>
-
-int Pote(int, int);
-int Fat(int);
-int mdc1(int, int);
-int mdc2(int, int);
-
-// int chamadas = 0;    //  Descomente caso queira saber quantas vezes a função foi chamada.
-
-int main() {
-    printf("\n%d\n", Pote(6,3));
-    // printf("\n%d\n", chamadas);    //  Descomente caso queira saber quantas vezes a função foi chamada.
-    return 0;
-}
+#include "pote.h"
 
 int Pote(int a, int n){
     int pot, y;
-    
+
     if (n == 0) pot =1;
-    
+
     else if (n == 1) pot = a;
     else if(n % 2 == 0){
         y = Pote(a, n/2);
@@ -28,17 +16,15 @@ int Pote(int a, int n){
         y = Pote(a, n-1);
         pot = a*y;
     }
-
-    // chamadas = chamadas + 1;    //  Descomente caso queira saber quantas vezes a função foi chamada.
     return pot;
 }
 
 int Fat(int n){
     int f;
-    
+
     if (n == 0) f = 1;
     else f = n * Fat(n-1);
-    return f;    
+    return f;
 }
 
 int mdc1 (int m, int n){
@@ -47,8 +33,10 @@ int mdc1 (int m, int n){
     if(m == 0) a = n;
     else if (m > n)  a = mdc1(n, m);
     else {
-
-    }  
+        d = n - m;
+        a = mdc1(m, d);
+    }
+    return a;
 }
 
 int mdc2(int m, int n){
