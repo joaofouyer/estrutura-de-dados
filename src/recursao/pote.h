@@ -4,4 +4,4 @@ int Pote(int, int);
 int Fat(int);
 int mdc1(int, int);
 int mdc2(int, int);
-#endif //ESTRUTURA_DE_DADOS_POTE_H
+#endif

@@ -1,5 +1,14 @@
 #include "fibonacciRecursivo.h"
 
+int Fibo(int n){
+    int f;
+    if (n < 3)
+        f = 1;
+    else
+        f = Fibo(n-1) + Fibo(n-2);
+    return f;
+}
+
 int fib2(int n){
     int f;
     f = tentarSomar(n, 1, 1);
