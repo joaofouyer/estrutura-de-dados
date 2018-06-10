@@ -38,6 +38,18 @@ void inserirNoInicioDoVetor(Vetor *V, int item){
     }
 }
 
+Vetor* buscarItemNoVetor(Vetor *V, int item){
+    Vetor* Itens = criarVetorVazio();
+    int i;
+    if (!verificarVetorVazio(V)){
+        for (i = 0; i < V->tamanho; i++){
+            if (V->itens[i] == item)
+                inserirNoVetor(Itens, i);
+        }
+    }
+    return Itens;
+}
+
 void removerDoVetor(Vetor *V, int indice){
     int i;
     if (indice < V->tamanho){

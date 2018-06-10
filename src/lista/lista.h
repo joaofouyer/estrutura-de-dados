@@ -18,6 +18,8 @@ void inserirNoVetor(Vetor *, int);          // Insere no final do vetor.
 
 void inserirNoInicioDoVetor(Vetor *, int);  // Insere no início do vetor.
 
+Vetor* buscarItemNoVetor(Vetor *, int);     // Retorna lista com todas as ocorrências de item no vetor.
+
 void removerDoVetor(Vetor *, int);          // Remove na posição indicada.
 
 void removerItemDoVetor(Vetor *, int);      // Busca e remove item do vetor caso ele pertença.
