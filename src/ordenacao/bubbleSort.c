@@ -21,3 +21,21 @@ Vetor BubbleSort(Vetor V){
     }
     return A;
 }
+
+void BubbleSort2(Vetor *A){
+    int nA, fim, aux;
+
+    nA = A->tamanho - 1;
+    fim = nA;
+
+    for (int i = 0; i < nA; i++) {
+        for (int j = 0; j < fim; j++) {
+            if (A->itens[j] > A->itens[j + 1]) {
+                aux = A->itens[j];
+                A->itens[j] = A->itens[j + 1];
+                A->itens[j + 1] = aux;
+            }
+            fim = fim - 1;
+        }
+    }
+}
