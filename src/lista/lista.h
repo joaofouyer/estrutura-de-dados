@@ -24,4 +24,6 @@ void removerDoVetor(Vetor *, int);          // Remove na posição indicada.
 
 void removerItemDoVetor(Vetor *, int);      // Busca e remove item caso ele pertença ao vetor.
 
+void copiarVetor(Vetor *, Vetor *);
+
 #endif

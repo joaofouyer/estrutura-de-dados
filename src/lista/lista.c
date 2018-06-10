@@ -87,3 +87,12 @@ void imprimirVetor(Vetor *V){
         printf("\nnA = %d. []", V->tamanho);
     }
 }
+
+void copiarVetor(Vetor *V, Vetor *A){
+    int i;
+    A->tamanho = 0;
+    for (i = 0; i < V->tamanho; i++){
+        A->itens[i] = V->itens[i];
+    }
+    A->tamanho = i;
+}
