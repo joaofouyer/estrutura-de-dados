@@ -22,6 +22,6 @@ Vetor* buscarItemNoVetor(Vetor *, int);     // Retorna lista com todas as ocorr�
 
 void removerDoVetor(Vetor *, int);          // Remove na posição indicada.
 
-void removerItemDoVetor(Vetor *, int);      // Busca e remove item do vetor caso ele pertença.
+void removerItemDoVetor(Vetor *, int);      // Busca e remove item caso ele pertença ao vetor.
 
 #endif
