@@ -8,22 +8,22 @@ typedef struct Vetor{
      int itens[MAX];
 } Vetor;
 
-Vetor* criarVetorVazio();
+Vetor criarVetorVazio();
 
-bool verificarVetorVazio(Vetor*);
+bool verificarVetorVazio(Vetor);
 
-void imprimirVetor(Vetor *);
+void imprimirVetor(Vetor);
 
 void inserirNoVetor(Vetor *, int);          // Insere no final do vetor.
 
 void inserirNoInicioDoVetor(Vetor *, int);  // Insere no início do vetor.
 
-Vetor* buscarItemNoVetor(Vetor *, int);     // Retorna lista com todas as ocorrências de item no vetor.
+Vetor buscarItemNoVetor(Vetor, int);     // Retorna lista com todas as ocorrências de item no vetor.
 
 void removerDoVetor(Vetor *, int);          // Remove na posição indicada.
 
 void removerItemDoVetor(Vetor *, int);      // Busca e remove item caso ele pertença ao vetor.
 
-void copiarVetor(Vetor *, Vetor *);
+void copiarVetor(Vetor, Vetor *);
 
 #endif

@@ -2,15 +2,15 @@
 #include <stdio.h>
 #include "lista.h"
 
-Vetor* criarVetorVazio(){
-    Vetor *V = malloc(sizeof(Vetor));
-    V->tamanho = 0;
+Vetor criarVetorVazio(){
+    Vetor V;
+    V.tamanho = 0;
     return V;
 }
 
-bool verificarVetorVazio(Vetor *V){
+bool verificarVetorVazio(Vetor V){
     bool vazio;
-    if (V->tamanho == 0)
+    if (V.tamanho == 0)
         vazio = TRUE;
     else
         vazio = FALSE;
@@ -38,13 +38,13 @@ void inserirNoInicioDoVetor(Vetor *V, int item){
     }
 }
 
-Vetor* buscarItemNoVetor(Vetor *V, int item){
-    Vetor* Itens = criarVetorVazio();
+Vetor buscarItemNoVetor(Vetor V, int item){
+    Vetor Itens = criarVetorVazio();
     int i;
-    if (V->tamanho){
-        for (i = 0; i < V->tamanho; i++){
-            if (V->itens[i] == item)
-                inserirNoVetor(Itens, i);
+    if (V.tamanho){
+        for (i = 0; i < V.tamanho; i++){
+            if (V.itens[i] == item)
+                inserirNoVetor(&Itens, i);
         }
     }
     return Itens;
@@ -74,25 +74,25 @@ void removerItemDoVetor(Vetor *V, int item){
     }
 }
 
-void imprimirVetor(Vetor *V){
-    if (V->tamanho > 0){
+void imprimirVetor(Vetor V){
+    if (V.tamanho > 0){
         int i;
-        printf("\nnA = %d. [", V->tamanho);
-        for (i = 0; i < (V->tamanho-1); i++){
-            printf("%d, ", V->itens[i]);
+        printf("\nnA = %d. [", V.tamanho);
+        for (i = 0; i < (V.tamanho-1); i++){
+            printf("%d, ", V.itens[i]);
         }
-        printf("%d]\n", V->itens[i]);
+        printf("%d]\n", V.itens[i]);
     }
     else {
-        printf("\nnA = %d. []", V->tamanho);
+        printf("\nnA = %d. []", V.tamanho);
     }
 }
 
-void copiarVetor(Vetor *V, Vetor *A){
+void copiarVetor(Vetor V, Vetor *A){
     int i;
     A->tamanho = 0;
-    for (i = 0; i < V->tamanho; i++){
-        A->itens[i] = V->itens[i];
+    for (i = 0; i < V.tamanho; i++){
+        A->itens[i] = V.itens[i];
     }
     A->tamanho = i;
 }
