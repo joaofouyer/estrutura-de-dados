@@ -1,0 +1,4 @@
+#ifndef ESTRUTURA_DE_DADOS_FILA_H
+#define ESTRUTURA_DE_DADOS_FILA_H
+
+#endif
