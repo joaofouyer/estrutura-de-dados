@@ -1,4 +1,0 @@
-/media/fouyer/Dados/Documents/faculdade/estrutura-de-dados/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/media/fouyer/Dados/Documents/faculdade/estrutura-de-dados/cmake-build-debug/CMakeFiles/edit_cache.dir
-/media/fouyer/Dados/Documents/faculdade/estrutura-de-dados/cmake-build-debug/CMakeFiles/main.dir
-/media/fouyer/Dados/Documents/faculdade/estrutura-de-dados/cmake-build-debug/CMakeFiles/fibonacciRecursivo.dir

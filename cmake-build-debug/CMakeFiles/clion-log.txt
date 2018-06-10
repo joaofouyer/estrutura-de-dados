@@ -1,4 +1,0 @@
-/home/fouyer/.local/share/JetBrains/Toolbox/apps/CLion/ch-1/173.4548.31/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /media/fouyer/Dados/Documents/faculdade/estrutura-de-dados
--- Configuring done
--- Generating done
--- Build files have been written to: /media/fouyer/Dados/Documents/faculdade/estrutura-de-dados/cmake-build-debug
