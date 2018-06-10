@@ -90,6 +90,7 @@ estrutura_de_dados_EXTERNAL_OBJECTS =
 
 estrutura_de_dados: CMakeFiles/estrutura_de_dados.dir/main.c.o
 estrutura_de_dados: CMakeFiles/estrutura_de_dados.dir/build.make
+estrutura_de_dados: libfilaPointer.a
 estrutura_de_dados: CMakeFiles/estrutura_de_dados.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/fouyer/Dados/Documents/faculdade/estrutura-de-dados/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable estrutura_de_dados"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/estrutura_de_dados.dir/link.txt --verbose=$(VERBOSE)

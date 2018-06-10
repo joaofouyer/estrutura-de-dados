@@ -111,44 +111,84 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named estrutura_de_dados
+# Target rules for targets named main
 
 # Build rule for target.
-estrutura_de_dados: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 estrutura_de_dados
-.PHONY : estrutura_de_dados
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-estrutura_de_dados/fast:
-	$(MAKE) -f CMakeFiles/estrutura_de_dados.dir/build.make CMakeFiles/estrutura_de_dados.dir/build
-.PHONY : estrutura_de_dados/fast
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
-main.o: main.c.o
+#=============================================================================
+# Target rules for targets named fibonacciRecursivo
 
-.PHONY : main.o
+# Build rule for target.
+fibonacciRecursivo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fibonacciRecursivo
+.PHONY : fibonacciRecursivo
+
+# fast build rule for target.
+fibonacciRecursivo/fast:
+	$(MAKE) -f CMakeFiles/fibonacciRecursivo.dir/build.make CMakeFiles/fibonacciRecursivo.dir/build
+.PHONY : fibonacciRecursivo/fast
+
+src/recursao/fibonacciRecursivo.o: src/recursao/fibonacciRecursivo.c.o
+
+.PHONY : src/recursao/fibonacciRecursivo.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/estrutura_de_dados.dir/build.make CMakeFiles/estrutura_de_dados.dir/main.c.o
-.PHONY : main.c.o
+src/recursao/fibonacciRecursivo.c.o:
+	$(MAKE) -f CMakeFiles/fibonacciRecursivo.dir/build.make CMakeFiles/fibonacciRecursivo.dir/src/recursao/fibonacciRecursivo.c.o
+.PHONY : src/recursao/fibonacciRecursivo.c.o
 
-main.i: main.c.i
+src/recursao/fibonacciRecursivo.i: src/recursao/fibonacciRecursivo.c.i
 
-.PHONY : main.i
+.PHONY : src/recursao/fibonacciRecursivo.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/estrutura_de_dados.dir/build.make CMakeFiles/estrutura_de_dados.dir/main.c.i
-.PHONY : main.c.i
+src/recursao/fibonacciRecursivo.c.i:
+	$(MAKE) -f CMakeFiles/fibonacciRecursivo.dir/build.make CMakeFiles/fibonacciRecursivo.dir/src/recursao/fibonacciRecursivo.c.i
+.PHONY : src/recursao/fibonacciRecursivo.c.i
 
-main.s: main.c.s
+src/recursao/fibonacciRecursivo.s: src/recursao/fibonacciRecursivo.c.s
 
-.PHONY : main.s
+.PHONY : src/recursao/fibonacciRecursivo.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/estrutura_de_dados.dir/build.make CMakeFiles/estrutura_de_dados.dir/main.c.s
-.PHONY : main.c.s
+src/recursao/fibonacciRecursivo.c.s:
+	$(MAKE) -f CMakeFiles/fibonacciRecursivo.dir/build.make CMakeFiles/fibonacciRecursivo.dir/src/recursao/fibonacciRecursivo.c.s
+.PHONY : src/recursao/fibonacciRecursivo.c.s
+
+src/recursao/main.o: src/recursao/main.c.o
+
+.PHONY : src/recursao/main.o
+
+# target to build an object file
+src/recursao/main.c.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/recursao/main.c.o
+.PHONY : src/recursao/main.c.o
+
+src/recursao/main.i: src/recursao/main.c.i
+
+.PHONY : src/recursao/main.i
+
+# target to preprocess a source file
+src/recursao/main.c.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/recursao/main.c.i
+.PHONY : src/recursao/main.c.i
+
+src/recursao/main.s: src/recursao/main.c.s
+
+.PHONY : src/recursao/main.s
+
+# target to generate assembly for a file
+src/recursao/main.c.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/recursao/main.c.s
+.PHONY : src/recursao/main.c.s
 
 # Help Target
 help:
@@ -158,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... estrutura_de_dados"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... main"
+	@echo "... fibonacciRecursivo"
+	@echo "... src/recursao/fibonacciRecursivo.o"
+	@echo "... src/recursao/fibonacciRecursivo.i"
+	@echo "... src/recursao/fibonacciRecursivo.s"
+	@echo "... src/recursao/main.o"
+	@echo "... src/recursao/main.i"
+	@echo "... src/recursao/main.s"
 .PHONY : help
 
 
