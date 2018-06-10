@@ -1,5 +1,8 @@
-#ifndef _ArvoreBinaria_h
-#define _ArvoreBinaria_h
+#ifndef ESTRUTURA_DE_DADOS_ARVOREBINARIA_H
+#define ESTRUTURA_DE_DADOS_ARVOREBINARIA_H
+#include "../booleano.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 typedef struct No {
     int elemento;
@@ -65,5 +68,4 @@ Arvore construirArvore(int item, Arvore E, Arvore D){
     raiz = novo;
     return raiz;
 }
-
 #endif
