@@ -14,6 +14,4 @@ add_library(pilhaPointer STATIC src/pilha/pilhaPointer.c)
 
 add_library(selecao STATIC src/ordenacao/selecao.c)
 add_library(bubbleSort src/ordenacao/bubbleSort.c)
-
-add_executable(insertionSort src/ordenacao/insertionSort.c)
-target_link_libraries(insertionSort lista)
+add_library(insertionSort src/ordenacao/insertionSort.c)
