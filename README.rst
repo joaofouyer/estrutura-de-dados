@@ -33,6 +33,8 @@ Tópicos:
             2. Árvore *Balanceada*
                 1. Árvore *AVL*
                 2. Árvore *Rubro-Negra*
+        3. Operações com Árvores Binárias
+
     2. Árvore n-ária
         1. Árvore *2-3-4*
         2. Árvore B
